@@ -1,11 +1,10 @@
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.*;
+public  class Main {
 
-public class Main {
     public static void main(String[] args) {
 
-        Scanner scanner =  new Scanner(System.in);
-        Days days = Days.valueOf(scanner.nextLine().toUpperCase(Locale.ROOT));
+
+        /**Days days = Days.valueOf(scanner.nextLine().toUpperCase(Locale.ROOT));
         switch (days){
             case MONDAY:
                 System.out.println(Days.MONDAY+days.getDays());
@@ -32,9 +31,24 @@ public class Main {
 
                 break;
 
+        }*/
+                List<Integer> run = new ArrayList<>();
+                LinkedHashSet<Integer> abv = new LinkedHashSet<>();
+                Random rn = new Random();
+                int sum = 0;
+                for (int i = 0; i < 50; i++){
+                    run.add(rn.nextInt(1,100));
+
+                }
+                for (int a :run) {
+                    abv.add(a);
+
+                }
+                for ( int d :abv) {
+                    sum+=d;
+                }
+                System.out.println(abv);
+                System.out.println(sum);
+            }
         }
 
-    }
-
-
-}

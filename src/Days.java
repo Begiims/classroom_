@@ -1,6 +1,6 @@
 
-    public  enum Days {
-        MONDAY("I study java"),
+  /**  public  enum Days {
+       MONDAY("I study java"),
         TUESDAY("I study English"),
         WEDNESDAY(" I read a book"),
         THURSDAY("I go to school"),
@@ -17,6 +17,6 @@
         public String getDays() {
             return days;
         }
-    }
+    }*/
 
 
